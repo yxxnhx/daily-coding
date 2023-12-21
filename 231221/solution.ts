@@ -61,4 +61,6 @@ type AppendGood<T> = {
 	[key in keyof T as `good_${key & string}`]: T[key]
 };
 
-/* 템플릿 리터럴을 이용하여 선물을 받을 아이들 앞에 good_를 추가해주었다 */
+/* 템플릿 리터럴을 이용하여 선물을 받을 아이들 앞에 good_를 추가해주었다 
+참고 자료: https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html
+*/
